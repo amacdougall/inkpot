@@ -3,6 +3,8 @@
 " Maintainer: Ciaran McCreesh <ciaran.mccreesh@googlemail.com>
 " Homepage:   http://github.com/ciaranm/inkpot/
 "
+" Removed string guibg, since I found it distracting --amacdougall
+"
 " This should work in the GUI, rxvt-unicode (88 colour mode) and xterm (256
 " colour mode). It won't work in 8/16 colour terminals.
 "
@@ -95,10 +97,10 @@ if has("gui_running")
     hi Title          gui=BOLD   guifg=#af4f4b   guibg=NONE
     hi Visual         gui=NONE   guifg=#eeeeee   guibg=#4e4e8f
 
-    hi Comment        gui=NONE   guifg=#cd8b00   guibg=NONE
+    hi Comment        gui=ITALIC   guifg=#cd8b00   guibg=NONE
     hi Constant       gui=NONE   guifg=#ffcd8b   guibg=NONE
-    hi String         gui=NONE   guifg=#ffcd8b   guibg=#404040
-    hi Error          gui=NONE   guifg=#ffffff   guibg=#6e2e2e
+    hi String         gui=NONE   guifg=#ffcd8b   guibg=NONE
+    hi Error          gui=NONE   guifg=#ffffff   guibg=NONE
     hi Identifier     gui=NONE   guifg=#ff8bff   guibg=NONE
     hi Ignore         gui=NONE
     hi Number         gui=NONE   guifg=#f0ad6d   guibg=NONE
@@ -106,7 +108,7 @@ if has("gui_running")
     hi Special        gui=NONE   guifg=#c080d0   guibg=NONE
     hi SpecialChar    gui=NONE   guifg=#c080d0   guibg=#404040
     hi Statement      gui=NONE   guifg=#808bed   guibg=NONE
-    hi Todo           gui=BOLD   guifg=#303030   guibg=#d0a060
+    hi Todo           gui=BOLD   guifg=#303030   guibg=NONE
     hi Type           gui=NONE   guifg=#ff8bff   guibg=NONE
     hi Underlined     gui=BOLD   guifg=#df9f2d   guibg=NONE
     hi TaglistTagName gui=BOLD   guifg=#808bed   guibg=NONE
