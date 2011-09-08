@@ -3,12 +3,13 @@
 " Maintainer: Ciaran McCreesh <ciaran.mccreesh@googlemail.com>
 " Homepage:   http://github.com/ciaranm/inkpot/
 "
-" Removed string guibg, since I found it distracting --amacdougall
-"
 " This should work in the GUI, rxvt-unicode (88 colour mode) and xterm (256
 " colour mode). It won't work in 8/16 colour terminals.
 "
 " To use a black background, :let g:inkpot_black_background = 1
+"
+" Removed string guibg, since I found it distracting; also added as3 comment
+" highlighting. Alan MacDougall (alan@paperlesspost.com)
 
 set background=dark
 hi clear
@@ -128,6 +129,10 @@ if has("gui_running")
     hi doxygenSpecial               gui=NONE guifg=#fdab60   guibg=NONE
     hi doxygenSpecialMultilineDesc  gui=NONE guifg=#ad600b   guibg=NONE
     hi doxygenSpecialOnelineDesc    gui=NONE guifg=#ad600b   guibg=NONE
+
+    highlight as3docComment guifg=#C4B649 gui=italic
+    highlight as3docCommentKeyword guifg=#C4B649 gui=bold
+    highlight as3wingComment guifg=#999999 gui=italic
 
     if v:version >= 700
         hi Pmenu          gui=NONE   guifg=#eeeeee   guibg=#4e4e8f
