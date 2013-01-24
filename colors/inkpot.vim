@@ -8,8 +8,8 @@
 "
 " To use a black background, :let g:inkpot_black_background = 1
 "
-" Removed string guibg, since I found it distracting; also added as3 comment
-" highlighting. Alan MacDougall (alan@paperlesspost.com)
+" Removed string guibg, since I found it distracting; also added doc and wing
+" comment highlighting. Alan MacDougall (alan@paperlesspost.com)
 
 set background=dark
 hi clear
@@ -110,7 +110,7 @@ if has("gui_running")
     hi SpecialChar    gui=NONE   guifg=#c080d0   guibg=#404040
     hi Statement      gui=NONE   guifg=#808bed   guibg=NONE
     hi Todo           gui=BOLD   guifg=#303030   guibg=NONE
-    hi Type           gui=NONE   guifg=#ff8bff   guibg=NONE
+    hi Type           gui=NONE   guifg=#0099cc   guibg=NONE
     hi Underlined     gui=BOLD   guifg=#df9f2d   guibg=NONE
     hi TaglistTagName gui=BOLD   guifg=#808bed   guibg=NONE
 
@@ -130,9 +130,9 @@ if has("gui_running")
     hi doxygenSpecialMultilineDesc  gui=NONE guifg=#ad600b   guibg=NONE
     hi doxygenSpecialOnelineDesc    gui=NONE guifg=#ad600b   guibg=NONE
 
-    highlight as3docComment guifg=#C4B649 gui=italic
-    highlight as3docCommentKeyword guifg=#C4B649 gui=bold
-    highlight as3wingComment guifg=#999999 gui=italic
+    highlight docComment guifg=#C4B649 gui=italic
+    highlight docCommentKeyword guifg=#C4B649 gui=bold
+    highlight wingComment guifg=#999999 gui=italic
 
     if v:version >= 700
         hi Pmenu          gui=NONE   guifg=#eeeeee   guibg=#4e4e8f
